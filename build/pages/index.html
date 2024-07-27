@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PPC-2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+
+
+ 
+
+   <div class="header">
+     <a href="#default" class="logo1"><img src="Logo2-removebg-preview.png">PPC2024</a>
+     <div class="header-center">
+         <a class="active1" href="#home">Home</a>
+         <a class="navcontent" href="#contact">Contact</a>
+         <a class="navcontent" href="#E-books">E-Books</a>
+         <a class="navcontent" href="#donate">Donations</a>  
+         <a class="navcontent" href="#about">About us</a>
+         <h1 id="demo"></h1>
+
+         <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("August 11, 2024 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "IT IS TIME FOR SUCESS";
+              }
+            }, 1000);
+            </script>
+     </div>
+   </div>
+   
+   <div class="slideshow-container">
+     <div class="mySlides fade">
+         <img src="flyer1.jpg" style="width:1583.4px">
+     </div>
+    
+      <div class="mySlides fade">
+         <img src="flyer2.jpg" style="width:1583.4px">
+         
+     </div>
+
+     <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    
+    
+    </div>
+    <br>
+    
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+    <iframe 
+      src="https://www.youtube.com/embed/ZZvTQcAYXj4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+
+   <div class="row">
+      <div class="column">
+         <img src="hall.jpg">
+         <img src="hall1.jpg">
+         
+      </div> 
+    </div>
+    
+    <div class="column1">
+        <h2>Why attend?</h2>
+        <p>
+            Join us at RCCG Higher Ground Assembly’s Possibility Power
+            Conference, <br>a transformative event running for over 15 years.
+            <br>Experience profound spiritual growth through impactful teachings,
+            dynamic worship, and powerful prayers. <br>Connect with a vibrant
+            community and gain tools to unlock your God-given potential. <br>Don’t
+            miss this life-changing opportunity!.
+          </p>
+    </div>
+
+    <h3>Our Guest ministers</h3>
+
+    <div class="row2">
+        <div class="column2">
+          <div class="card">
+            <img src="ayo.jpg" alt="Jane" style="width:100%">
+            <div class="container2">
+              <h2>Pastor Ayo Olulana</h2>
+              <p class="title2">Senior PASTOR RCCG HIGHER GROUND ASSEMBLY</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column2">
+          <div class="card">
+            <img src="mummy.jpg" alt="mummy" style="width:100%">
+            <div class="container2">
+              <h2>Pastor Remi Olulana</h2>
+              <p class="title2">SENIOR PASTOR RCCG HIGHER GROUND ASSEMBLY</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column2">
+          <div class="card">
+            <img src="leke.jpg" alt="John" style="width:100%">
+            <div class="container2">
+              <h2>Pastor Leke Sanusi</h2>
+              <p class="title2">PASTOR RCCG HIGHER GROUND ASSEMBLY</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column2">
+            <div class="card">
+              <img src="blackwoman.jpg" alt="John" style="width:100%">
+              <div class="container2">
+                <h2>Pastor Funmi Obilana</h2>
+                <p class="title2">SENIOR PASTOR RCCG LIVING SPRING MIRACLE CENTER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column2">
+            <div class="card">
+              <img src="bayoguy.jpg" alt="Bayo" style="width:100%">
+              <div class="container2">
+                <h2>Pastor Bayo Adewole</h2>
+                <p class="title2">PASTOR RCCG HIGHER GROUND ASSEMBLY</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <h3>Our Worship Ministers</h3>
+
+    <div class="row2">
+        <div class="column2">
+          <div class="card">
+            <img src="PC Pst James.jpg" alt="James" style="width:100%">
+            <div class="container2">
+              <h2>Pastor James Okon</h2>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column2">
+          <div class="card">
+            <img src="PC Cosmos.jpg" alt="cosmos" style="width:100%">
+            <div class="container2">
+              <h2>Cosmos</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column2">
+          <div class="card">
+            <img src="PC Josh.jpg" alt="Josh" style="width:100%">
+            <div class="container2">
+              <h2>Josh Blayze</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="column2">
+            <div class="card">
+              <img src="PC Enkay.jpg" alt="Enkay" style="width:100%">
+              <div class="container2">
+                <h2>Enkay</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="column2">
+            <div class="card">
+              <img src="PC Lawrence.jpg" alt="Lawrence" style="width:100%">
+              <div class="container2">
+                <h2>Min Lawrence Deconvenant</h2>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are a community-focused church committed to serving and connecting people.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: ADMIN@RCCGHIGHERGROUD.com</p>
+                <p>Phone: [410] 944-3323</p>
+                <p>Address: 2021 LORD BALTIMORE DRIVE. <br> WINDSOR MILL ,MD 21244 USA</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/HigherGroundAssemblyBaltimore/?ref=bookmarks"><img src="icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCnZIMNOOp8fYKGvZ20CaFwA/videos?view_as=subscriber"><img src="icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/rccg_hga/"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; PPC2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    
+    
+         
+    
+
+        
+
+                                         
+</body>
+</html>
